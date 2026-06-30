@@ -10,15 +10,15 @@ app = Flask(__name__)
 # You can change names and weights (in grams) directly here!
 # ==========================================
 PRODUCTS_CONFIG = [
-    {"image": "krtist02306.jpg", "name": "Baraka Rose Gold Hexagon Bracelet", "weight": 9.34},
-    {"image": "krtist02301.jpg", "name": "Baraka Slim Ceramic Link Bracelet", "weight": 7.44},
-    {"image": "krtist02299.jpg", "name": "Baraka Diamond Accent Chain", "weight": 4.73},
-    {"image": "krtist02298.jpg", "name": "Baraka Geometric Tech-Ceramic", "weight": 7.74},
-    {"image": "krtist02313.jpg", "name": "Baraka Heavy Matte Link Bracelet", "weight": 11.51},
-    {"image": "krtist02316.jpg", "name": "Baraka Multi-tone Segmented Band", "weight": 10.0},
-    {"image": "krtist02314.jpg", "name": "Baraka Minimalist Hex Lock", "weight": 25.5},
-    {"image": "krtist02312.jpg", "name": "Baraka Bold Structural Ceramic", "weight": 20.18},
-    {"image": "krtist02311.jpg", "name": "Baraka Classic Signature Edition", "weight": 22.7},
+    {"image": "krtist02306.jpg", "name": "Baraka Rose Gold Hexagon Bracelet", "weight": 12.5},
+    {"image": "krtist02301.jpg", "name": "Baraka Slim Ceramic Link Bracelet", "weight": 9.8},
+    {"image": "krtist02299.jpg", "name": "Baraka Diamond Accent Chain", "weight": 15.2},
+    {"image": "krtist02298.jpg", "name": "Baraka Geometric Tech-Ceramic", "weight": 11.4},
+    {"image": "krtist02313.jpg", "name": "Baraka Heavy Matte Link Bracelet", "weight": 18.5},
+    {"image": "krtist02316.jpg", "name": "Baraka Multi-tone Segmented Band", "weight": 14.0},
+    {"image": "krtist02314.jpg", "name": "Baraka Minimalist Hex Lock", "weight": 10.5},
+    {"image": "krtist02312.jpg", "name": "Baraka Bold Structural Ceramic", "weight": 16.8},
+    {"image": "krtist02311.jpg", "name": "Baraka Classic Signature Edition", "weight": 13.2},
 ]
 
 def get_live_gold_price():
@@ -56,8 +56,8 @@ def customer_pricing_page():
     
     calculated_products = []
     for product in PRODUCTS_CONFIG:
-        # Final price formula: (Live gold price / 1.7) + (Extra costs * weight)
-        final_price = gold_price_per_gram + (extra_costs * product["weight"])
+        # CORRECTED FORMULA: (Live gold price / 1.7 + 50) * Weight
+        final_price = (gold_price_per_gram + extra_costs) * product["weight"]
         
         calculated_products.append({
             "image": product["image"],
