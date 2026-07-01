@@ -13,12 +13,12 @@ PRODUCTS_CONFIG = [
     {"image": "krtist02306.jpg", "name": "Baraka Rose Gold Hexagon Bracelet", "weight": 9.34},
     {"image": "krtist02301.jpg", "name": "Baraka Slim Ceramic Link Bracelet", "weight": 7.44},
     {"image": "krtist02299.jpg", "name": "Baraka Diamond Accent Chain", "weight": 4.73},
-    {"image": "krtist02298.jpg", "name": "Baraka Geometric Tech-Ceramic", "weight": 11.40},
-    {"image": "krtist02313.jpg", "name": "Baraka Heavy Matte Link Bracelet", "weight": 18.50},
-    {"image": "krtist02316.jpg", "name": "Baraka Multi-tone Segmented Band", "weight": 14.00},
-    {"image": "krtist02314.jpg", "name": "Baraka Minimalist Hex Lock", "weight": 10.50},
-    {"image": "krtist02312.jpg", "name": "Baraka Bold Structural Ceramic", "weight": 16.80},
-    {"image": "krtist02311.jpg", "name": "Baraka Classic Signature Edition", "weight": 13.20},
+    {"image": "krtist02298.jpg", "name": "Baraka Geometric Tech-Ceramic", "weight": 7.74},
+    {"image": "krtist02313.jpg", "name": "Baraka Heavy Matte Link Bracelet", "weight": 11.51},
+    {"image": "krtist02316.jpg", "name": "Baraka Multi-tone Segmented Band", "weight": 10.00},
+    {"image": "krtist02314.jpg", "name": "Baraka Minimalist Hex Lock", "weight": 25.50},
+    {"image": "krtist02312.jpg", "name": "Baraka Bold Structural Ceramic", "weight": 20.18},
+    {"image": "krtist02311.jpg", "name": "Baraka Classic Signature Edition", "weight": 22.70},
 ]
 
 def get_live_gold_price():
